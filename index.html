@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic-Tac Othello</title>
+
+  <link rel="stylesheet" href="tto.css" type="text/css" media="all" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <!--<script type="text/javascript" src="jquery.dataSelector.js"></script>-->
+  <script type="text/javascript" src="tto.js"></script>
+  
+</head>
+<body>
+<div id="tto-game">
+  <div>Player: <span id="player" class="player0"></span></div>
+  <div class="row first">
+    <div id="c00" class="cell first"></div>
+    <div id="c01" class="cell"></div>
+    <div id="c02" class="cell"></div>
+    <div id="c03" class="cell last"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="row">
+    <div id="c10" class="cell first"></div>
+    <div id="c11" class="cell"></div>
+    <div id="c12" class="cell"></div>
+    <div id="c13" class="cell last"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="row">
+    <div id="c20" class="cell first"></div>
+    <div id="c21" class="cell"></div>
+    <div id="c22" class="cell"></div>
+    <div id="c23" class="cell last"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="row last">
+    <div id="c30" class="cell first"></div>
+    <div id="c31" class="cell"></div>
+    <div id="c32" class="cell"></div>
+    <div id="c33" class="cell last"></div>
+    <div class="clear"></div>
+  </div>
+  <div><a id="reset" href="javascript:reset();">Replay</span></div>
+</div>
+</body>
+</html>

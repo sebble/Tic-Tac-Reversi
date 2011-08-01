@@ -1,0 +1,77 @@
+#tto-game {
+  font-family: verdana;
+  font-size: 2em;
+  line-height: 50px;
+  text-align: center;
+  width: 212px;
+  height: 212px;
+  margin: 2em auto;
+}
+
+.cell {
+  float: left;
+  width: 50px;
+  height: 50px;
+  /*background-color: #f09;*/
+  border: solid 2px #333;
+  cursor: pointer;
+}
+.row.first .cell {
+  border-top: none;
+}
+.cell.first {
+  border-left: none;
+}
+.row.last .cell {
+  border-bottom: none;
+}
+.cell.last {
+  border-right: none;
+}
+.cell:hover {
+  background-color: #90f;
+  background-color: #fed;
+}
+
+.clear {
+  clear: both;
+}
+
+.player0:after {
+  content: "X";
+  color: #09f;
+}
+div.player0 {
+  background-color: #def;
+}
+.player1:after {
+  content: "O";
+  color: #f09;
+}
+div.player1 {
+  background-color: #fde;
+}
+
+div.win {
+  background-color: #ccc;
+  text-decoration: line-through;
+}
+
+#reset {
+  padding: 0 0.3em;
+  background-color:#efd;
+  border: solid 2px #333;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  display: none;
+  position: relative;
+  /*opacity: 0.7;*/
+  top: -130px;
+  width: 150px;
+  margin: 0 auto;
+}
+#reset:hover {
+  background-color:#fed;
+  opacity: 1;
+}
